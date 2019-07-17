@@ -119,12 +119,12 @@ class Container
 
  	public function getInstance($callable)
 	{    
-    		return function ($c) use ($callable)
+    		return function () use ($callable)
     		{
 			static $_instance;
       			if (is_null($_instance))
       			{
-        			$_instance = $callable($c);
+        			$_instance = $callable();
       			}
       			return $_instance;
    		 };
