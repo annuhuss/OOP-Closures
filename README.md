@@ -11,7 +11,7 @@ Interestingly I have planed to write this article as I was vastly inspired by th
 </p>
 
 <p> 
-The PHP example depicted here focuses on to the operation of Lambda/anonymous functions, closures, shared instances and two of the PHP magic methods <strong>__set()</strong> and <strong>__get()</strong> by introducing them into a container. Something I need to mention is that, I have already written an article on Dependency Injection Container wherein some of the topics of this article are already introduced. Therefore I am not going to discuss all of them in details here. But if someone is interested, he can visit the <a href="https://medium.com/@annuhuss/dependency-injection-container-a-simple-introduction-for-managing-objects-from-their-creation-to-cebbcb772694"><i>Link</i></a> to get more about how to implement Dependency Injection, shared instance and some PHP magic methods into a Dependency Injection Container.
+The PHP example depicted here focuses on to the operation of Lambda/anonymous functions, closures, shared instances and two of the PHP magic methods <strong>__set()</strong> and <strong>__get()</strong> by introducing them into a container. Something I need to mention here is that, I have already written an article on Dependency Injection Container wherein some of the topics of this article are already introduced. Therefore I am not going to discuss all of them in details here. But if someone is further interested then please, visit the <a href="https://medium.com/@annuhuss/dependency-injection-container-a-simple-introduction-for-managing-objects-from-their-creation-to-cebbcb772694"><i>Link</i></a> to go through how to implement Dependency Injection, shared instance and some PHP magic methods into a Dependency Injection Container.
 </p>
 
 <p>
@@ -69,7 +69,7 @@ for ($i = 0; $i < count($items); $i++)
 }
 ```
 <p>
-As it can easily be seen from the above code, each anonymous function in the array elements is now wrapped by a closure giving each of them a parameter from its(the closure) parent scope by the aid of <strong>use</strong> keyword. This is the beauty of using an anonymous function having a closure in many PHP applications.
+As it can easily be seen from the above code, each anonymous function in the array elements is now wrapped by a closure giving each of them a parameter from its(the closure's) parent scope by the aid of <strong>use</strong> keyword. This is the beauty of using an anonymous function having a closure in many PHP applications.
 </p>
 
 <p>
